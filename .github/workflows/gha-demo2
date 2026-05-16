@@ -1,6 +1,6 @@
 #Running multiple shell commands in a single script
 
-name: Hello World
+name: Hello World1
 on: workflow_dispatch
 jobs: 
   hello:
