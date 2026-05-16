@@ -1,1 +1,19 @@
-
+name: Running multiple jobs
+on: workflow_dispatch
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: build step
+      run: "echo building step"
+  test:
+  runs-on: ubuntu-latest
+  steps:
+    - name: testing step
+      run: "echo testing step"
+  deploy:
+     runs-on: ubuntu-latest
+     steps: 
+       - name: deploy step
+         run: "echo deploying step"
+    
