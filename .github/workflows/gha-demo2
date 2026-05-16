@@ -1,9 +1,9 @@
 #Running multiple shell commands in a single script
 
-name: Hello World1
+name: Hello World2
 on: workflow_dispatch
 jobs: 
-  hello:
+  hello1:
   runs-on: ubuntu-latest
   steps:
     - name: hello step
