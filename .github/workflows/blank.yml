@@ -1,21 +1,10 @@
 name: Running multiple jobs sequetially
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: build step
         run: "echo building step"
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: testing step
-        run: "echo testing step"
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    steps: 
-     - name: deploy step
-       run: "echo deploying step"
+
     
