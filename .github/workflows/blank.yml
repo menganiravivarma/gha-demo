@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: build step
+      - name: build stepS
         run: "echo building step ${{VARS.MY_NAME}}"
 
     
