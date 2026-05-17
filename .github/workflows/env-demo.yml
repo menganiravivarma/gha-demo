@@ -12,4 +12,4 @@ jobs:
        env:
          APP_ENV: "prod"
        run: echo connecting to app $APP_ENV"
-       default: true
+       default: "true"
